@@ -1,7 +1,7 @@
-Regex Ayrıştırıcısı
+Regex Parser
 
 Giriş
-Regex Ayrıştırıcısı, kullanıcıdan bir regex deseni ve bir metin girişi alan ve regex deseni içindeki belirli meta karakterleri işleyen bir Python betiğidir. Bu betik ?, |, *, +, {}, [], (), ^, $, . içerir. . gibi yaygın regex meta karakterlerini tanır ve işler.
+Regex Parser, kullanıcıdan bir regex deseni ve bir metin girişi alan ve regex deseni içindeki belirli meta karakterleri işleyen bir Python script'idir. Bu script "?, |, *, +, {}, [], (), ^, $, ." içerir. "." gibi yaygın regex meta karakterlerini tanır ve işler.
 
 Nasıl kullanılır?
 Desen ve metni parser(pattern, text) işlevini kullanarak parametre olarak gönderin.
@@ -9,7 +9,6 @@ Desen içindeki meta karakterlere göre uygun işlevler otomatik olarak çağrı
 Eşleşmeler konsola yazdırılacaktır.
 
 Örnek:
-
 pattern = "a?b"
 text = "ab abb aabb aaabb"
 parser(pattern, text)
