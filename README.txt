@@ -1,29 +1,27 @@
-Regex Parser
+Regex Ayrıştırıcısı
 
-Entrance
-Regex Parser is a Python script that takes a regex pattern and a text input from the user, processing specific metacharacters within the regex pattern. This script includes ?, |, *, +, {}, [], (), ^, $, . Recognizes and processes common regex metacharacters such as .
+Giriş
+Regex Ayrıştırıcısı, kullanıcıdan bir regex deseni ve bir metin girişi alan ve regex deseni içindeki belirli meta karakterleri işleyen bir Python betiğidir. Bu betik ?, |, *, +, {}, [], (), ^, $, . içerir. . gibi yaygın regex meta karakterlerini tanır ve işler.
 
-How to use?
-Send the pattern and text as parameters using the parser(pattern, text) function.
-Appropriate functions will be called automatically based on the metacharacters within the pattern.
-Matches will be printed to the console.
+Nasıl kullanılır?
+Desen ve metni parser(pattern, text) işlevini kullanarak parametre olarak gönderin.
+Desen içindeki meta karakterlere göre uygun işlevler otomatik olarak çağrılacaktır.
+Eşleşmeler konsola yazdırılacaktır.
 
-Example:
+Örnek:
 
 pattern = "a?b"
 text = "ab abb aabb aaabb"
 parser(pattern, text)
+Bu örnekte, ? Meta karakterle işaretlenen "a" karakterinin var olup olmadığını kontrol ediyoruz.
 
-In this example, ? We check whether the character "a" marked with the metacharacter exists.
-
-Supported Metacharacters
-?: The query sign indicates that the previous character is optional.
-|: Vertical bar combines two alternative patterns.
-*: An asterisk indicates zero or more occurrences of the previous character.
-+: The plus sign indicates one or more occurrences of the previous character.
-{}: Curly brackets indicate repetitions within a certain range.
-[]: Square brackets indicate a specific set of characters.
-(): Round brackets indicate grouping and subexpressions.
-^: The caret makes a pattern match the beginning of the text.
-$: The dollar sign makes a pattern match the end of text.
-.: The dot symbol represents any single character.
+Desteklenen Meta Karakterler
+?: Sorgu işareti, önceki karakterin isteğe bağlı olduğunu gösterir. |: Dikey çubuk iki alternatif deseni birleştirir.
+*: Yıldız işareti, önceki karakterin sıfır veya daha fazla oluşumunu gösterir.
++: Artı işareti, önceki karakterin bir veya daha fazla oluşumunu gösterir.
+{}: Kıvrımlı parantezler, belirli bir aralıktaki tekrarları gösterir.
+[]: Köşeli parantezler, belirli bir karakter kümesini gösterir.
+(): Yuvarlak parantezler, gruplandırmayı ve alt ifadeleri gösterir.
+^: İşaret, bir deseni metnin başlangıcıyla eşleştirir.
+$: Dolar işareti, bir deseni metnin sonuyla eşleştirir.
+.: Nokta sembolü, herhangi bir tek karakteri temsil eder.
